@@ -9,7 +9,6 @@ const uniqArrObjController = require("../apps/controllers/uniqArrObj");
 const groupbyController = require("../apps/controllers/groupby");
 const trimAll = require("../apps/controllers/trim");
 const mapkeyController = require("../apps/controllers/mapkey");
-const switchOrder = require("../apps/controllers/switchorder");
 
 router.post("/chunk", chunkController);
 router.post("/reveres", reversesController);
@@ -18,6 +17,5 @@ router.post("/uniq2", uniqArrObjController);
 router.post("/groupby", groupbyController);
 router.post("/trim", trimAll);
 router.post("/mapkey", mapkeyController);
-router.post("/switchorder", switchOrder);
 
 module.exports = router;
