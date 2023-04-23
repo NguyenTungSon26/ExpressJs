@@ -10,6 +10,12 @@ const groupbyController = require("../apps/controllers/groupby");
 const trimAll = require("../apps/controllers/trim");
 const mapkeyController = require("../apps/controllers/mapkey");
 
+const login = require("../apps/controllers/login");
+
+//Login - Logout
+// router.post("/login",(req,res,next())=> login);
+// midleware validate token
+// Array-Object
 router.post("/chunk", chunkController);
 router.post("/reveres", reversesController);
 router.post("/uniq", uniqController);
